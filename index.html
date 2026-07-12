@@ -1,29 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | Machine Learning Research</title>
-
-    <link rel="stylesheet" href="styles.css">
-
-    <script type="module" src="app.js"></script>
-</head>
-<body>
-
-<site-header></site-header>
-
-<hero-section></hero-section>
-
-<about-section></about-section>
-
-<research-section></research-section>
-
-<skills-section></skills-section>
-
-<contact-section></contact-section>
-
-<site-footer></site-footer>
-
-</body>
-</html>
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8" /> <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <title>Aspiring PhD Assistant | Machine Learning, Logic & Language, Mathematics</title> <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"> <style> *{ margin:0; padding:0; box-sizing:border-box; } html{ scroll-behavior:smooth; } body{ font-family:Inter, sans-serif; background:#0f172a; color:#e5e7eb; line-height:1.7; } a{ text-decoration:none; color:inherit; } .container{ width:min(1100px,90%); margin:auto; } header{ min-height:100vh; display:flex; align-items:center; background: radial-gradient(circle at top right,#1d4ed8 0%,transparent 40%), radial-gradient(circle at bottom left,#7c3aed 0%,transparent 35%), #0f172a; } nav{ position:fixed; top:0; width:100%; backdrop-filter:blur(12px); background:rgba(15,23,42,.65); z-index:999; border-bottom:1px solid rgba(255,255,255,.08); } nav .container{ display:flex; justify-content:space-between; align-items:center; padding:18px 0; } .logo{ font-weight:700; font-size:1.1rem; } .menu{ display:flex; gap:30px; } .menu a:hover{ color:#60a5fa; } .hero{ display:grid; grid-template-columns:1.2fr .8fr; gap:60px; align-items:center; } h1{ font-size:3.8rem; line-height:1.1; margin-bottom:20px; } .highlight{ color:#60a5fa; } .subtitle{ color:#cbd5e1; font-size:1.15rem; max-width:650px; margin-bottom:35px; } .buttons{ display:flex; gap:18px; flex-wrap:wrap; } .btn{ padding:14px 28px; border-radius:10px; font-weight:600; transition:.3s; } .primary{ background:#2563eb; } .primary:hover{ background:#1d4ed8; } .secondary{ border:1px solid #64748b; } .secondary:hover{ background:#1e293b; } .card{ background:#111827; border:1px solid rgba(255,255,255,.08); padding:35px; border-radius:20px; box-shadow:0 15px 40px rgba(0,0,0,.25); } section{ padding:100px 0; } h2{ font-size:2rem; margin-bottom:25px; color:white; } .grid{ display:grid; grid-template-columns:repeat(auto-fit,minmax(260px,1fr)); gap:24px; } .research-card{ background:#111827; padding:30px; border-radius:18px; border:1px solid rgba(255,255,255,.06); transition:.3s; } .research-card:hover{ transform:translateY(-5px); border-color:#2563eb; } .research-card h3{ margin-bottom:12px; color:#60a5fa; } ul{ padding-left:18px; } li{ margin:10px 0; } footer{ padding:50px 0; border-top:1px solid rgba(255,255,255,.08); text-align:center; color:#94a3b8; } .contact{ text-align:center; } .email{ margin-top:20px; display:inline-block; font-size:1.05rem; color:#60a5fa; } @media(max-width:850px){ h1{ font-size:2.7rem; } .hero{ grid-template-columns:1fr; } .menu{ display:none; } } </style> </head> <body> <nav> <div class="container"> <div class="logo">Your Name</div><div class="menu">
+  <a href="#about">About</a>
+  <a href="#research">Research</a>
+  <a href="#skills">Skills</a>
+  <a href="#contact">Contact</a>
+</div>
+</div> </nav> <header> <div class="container hero"> <div> <h1> Aspiring <span class="highlight">PhD Research Assistant</span><br> in Machine Learning, Logic & Language, and Mathematics </h1> <p class="subtitle"> I am an aspiring researcher passionate about building intelligent systems grounded in rigorous mathematics, formal logic, and natural language understanding. My goal is to contribute to cutting-edge research at the intersection of artificial intelligence, reasoning, and scientific discovery. </p> <div class="buttons"> <a href="#research" class="btn primary">Research Interests</a> <a href="#contact" class="btn secondary">Get in Touch</a> </div> </div> <div class="card"> <h2>Research Focus</h2> <ul> <li>Machine Learning & Deep Learning</li> <li>Large Language Models (LLMs)</li> <li>Formal Logic & Automated Reasoning</li> <li>Natural Language Processing</li> <li>Mathematical Foundations of AI</li> <li>Probabilistic Models</li> <li>Optimization & Statistical Learning</li> <li>Interpretable and Trustworthy AI</li> </ul> </div> </div> </header> <section id="about"> <div class="container"> <h2>About Me</h2> <p> I am preparing for graduate research with a strong interest in the theoretical and practical foundations of artificial intelligence. I enjoy exploring how mathematical reasoning, formal logic, and modern machine learning can work together to build systems that learn, reason, and communicate effectively. </p> <br> <p> My long-term goal is to pursue a PhD where I can contribute to research in machine learning, language technologies, symbolic reasoning, and mathematical modeling while collaborating with interdisciplinary research groups. </p> </div> </section> <section id="research"> <div class="container"> <h2>Research Interests</h2> <div class="grid"> <div class="research-card"> <h3>Machine Learning</h3> <p> Representation learning, deep neural networks, reinforcement learning, generative models, optimization, and statistical learning theory. </p> </div> <div class="research-card"> <h3>Logic & Language</h3> <p> Formal semantics, computational linguistics, symbolic reasoning, knowledge representation, theorem proving, and language understanding. </p> </div> <div class="research-card"> <h3>Mathematics</h3> <p> Linear algebra, probability theory, optimization, graph theory, information theory, and mathematical foundations of AI. </p> </div> <div class="research-card"> <h3>Future Directions</h3> <p> Neuro-symbolic AI, explainable AI, reasoning-enhanced language models, scientific machine learning, and trustworthy intelligent systems. </p> </div> </div> </div> </section> <section id="skills"> <div class="container"> <h2>Technical Skills</h2> <div class="grid"> <div class="research-card"> <h3>Programming</h3> <ul> <li>Python</li> <li>C++</li> <li>MATLAB</li> <li>Git</li> </ul> </div> <div class="research-card"> <h3>Machine Learning</h3> <ul> <li>PyTorch</li> <li>TensorFlow</li> <li>Scikit-learn</li> <li>Transformers</li> </ul> </div> <div class="research-card"> <h3>Mathematics</h3> <ul> <li>Linear Algebra</li> <li>Calculus</li> <li>Probability</li> <li>Optimization</li> </ul> </div> </div> </div> </section> <section id="contact"> <div class="container contact"> <h2>Let's Connect</h2> <p> I'm always interested in research collaborations, graduate opportunities, and discussions about machine learning, mathematics, and language technologies. </p> <a class="email" href="mailto:your.email@example.com"> your.email@example.com </a> </div> </section> <footer> <div class="container"> <p> © 2026 Your Name • Aspiring PhD Researcher • Machine Learning • Logic & Language • Mathematics </p> </div> </footer> </body> </html>
