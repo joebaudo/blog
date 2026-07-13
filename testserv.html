@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Chiamata Servizio JSON</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        pre {
+            margin-top: 20px;
+            background: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ccc;
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="btnChiama">Chiama Servizio</button>
+
+    <pre id="risultato">In attesa...</pre>
+
+    <script>
+        document.getElementById("btnChiama").addEventListener("click", async function () {
+
+            const output = document.getElementById("risultato");
+            output.textContent = "Caricamento...";
+
+            try {
+                const response = await fetch("http://129.121.123.43:8080/hello", {
+                    method: "GET",
+                    headers: {
+                        "Accept": "application/json"
+                    }
+                });
+
+                if (!response.ok) {
+                    throw new Error(`Errore HTTP: ${response.status}`);
+                }
+
+                const data = await response.json();
+
+                output.textContent = JSON.stringify(data, null, 2);
+
+            } catch (err) {
+                output.textContent = "Errore: " + err.message;
+                console.error(err);
+            }
+
+        });
+    </script>
+
+</body>
+</html>
